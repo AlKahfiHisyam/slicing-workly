@@ -1,1 +1,178 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Merriweather:wght@900&display=swap");
+* {
+  font-family: 'Inter', sans-serif !important;
+}
+
+body .font-lora {
+  font-family: 'Lora', sans-serif !important;
+}
+
+body nav .navbar-brand h5 {
+  font-weight: 700 !important;
+  size: 24px !important;
+  line-height: 150%;
+}
+
+body nav .navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: white !important;
+  margin: 0 10px;
+  width: 100px;
+}
+
+body nav .navbar-nav .active {
+  color: white !important;
+  width: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .header {
+  background: radial-gradient(100% 130.94% at 0% 0%, #114E4E 0%, #052D2D 34.18%, #041111 61.14%, #000909 91.58%);
+}
+
+body .tag-line {
+  margin: 80px auto 80px auto !important;
+}
+
+@media only screen and (min-width: 768px) {
+  body .tag-line {
+    margin: 0 auto 0 auto !important;
+    padding-top: 172px;
+  }
+  body .tag-line h1 {
+    font-size: 72px;
+    line-height: 125%;
+  }
+  body .tag-line p {
+    padding-top: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+
+body .btn-started {
+  margin-top: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  body .btn-started {
+    margin-top: 116px !important;
+  }
+}
+
+body .btn-started button {
+  font-size: 24px;
+  font-weight: 600;
+  color: #082D28;
+}
+
+body .explain {
+  background-color: #E6F5F0;
+}
+
+body .explain h1 {
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  body .explain h1 {
+    font-size: 40 !important;
+  }
+}
+
+body .explain .card {
+  border-radius: 12px !important;
+  width: 364px !important;
+}
+
+body .explain .card-title {
+  font-weight: 700;
+}
+
+body .explain .card-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #868686;
+}
+
+body .client h1 {
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  body .client h1 {
+    font-size: 40 !important;
+  }
+}
+
+body .client .merriweather {
+  font-family: Merriweather !important;
+  font-weight: 900;
+  font-size: 80px;
+  color: #8BADAD;
+  height: 60px;
+}
+
+body .client .review {
+  color: #627A7A;
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif !important;
+}
+
+body .client h5 {
+  font-weight: 900;
+  font-size: 32px;
+  color: #064242;
+  font-family: 'Lato', sans-serif !important;
+}
+
+body .client .company {
+  font-weight: 400;
+  font-size: 16px;
+  color: #064242;
+  font-family: 'Lato', sans-serif !important;
+}
+
+body .mail {
+  background-color: white;
+  border-radius: 12px;
+}
+
+body .mail h1 {
+  font-weight: 700;
+  line-height: 135%;
+  color: #232323;
+}
+
+@media only screen and (min-width: 768px) {
+  body .mail h1 {
+    font-size: 72px !important;
+  }
+}
+
+body .mail p {
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 16px;
+  color: #232323;
+}
+
+body .mail .btn-message {
+  background-color: #EEEEEE;
+  color: #082D28;
+  font-weight: 500;
+  font-size: 24px;
+}
+/*# sourceMappingURL=main.css.map */

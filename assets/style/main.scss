@@ -1,40 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Merriweather:wght@900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif !important;
+  }
+  
+$font-weight: (
+    "regular": 400,
+    "medium": 500,
+    "semi-bold": 600,
+    "bold": 700,
+    "extra-bold": 900,
+  );
+
+$dark: #232323;
+$black: #082D28;
+$light-black: #064242;
+$light-grey: #E6F5F0;
+$grey: #868686;
+$pink: #627A7A;
+$light: #EEEEEE;
 
 
 body {
+    .font-lora {
+        font-family: 'Lora', sans-serif !important;
+    }
+
     nav {
         .navbar-brand {
-          h5 {
-            font-weight: map-get($map: $font-weight, $key: bold) !important;
-            size: 28px;
-            line-height: 150%;
-          }
+            h5 {
+                font-weight: map-get($map: $font-weight, $key: bold) !important;
+                size: 24px !important;
+                line-height: 150%;
+            }
         }
         
         .navbar-nav {
-          .nav-link {
-            font-size: 16px;
-            font-weight: map-get($map: $font-weight, $key: semi-bold);
-            color: $light-blue!important;
-            margin: 0 30px;
-          }
-    
-          .active {
-            color: $black !important;
-            width: 100%;
-            display: flex !important;
-            justify-content: center;
-            a {
-              width: 12px;
+            .nav-link {
+                font-size: 16px;
+                font-weight: map-get($map: $font-weight, $key: regular);
+                color: white !important;
+                margin: 0 10px;
+                width: 100px;
             }
-          }
-    
-          .border-bottom{
-            border-bottom: 2px solid $blue !important;
-          }
-    
-          @media screen and (min-width: 993px) {
-              margin-left: 500px;
-          }
+        
+            .active {
+                color: white !important;
+                width: 100%;
+                display: flex !important;
+                justify-content: center;
+            }
+        }
+    }
+
+    .header {
+        background: radial-gradient(100% 130.94% at 0% 0%, #114E4E 0%, #052D2D 34.18%, #041111 61.14%, #000909 91.58%);
+    }
+
+    .tag-line {
+        @media only screen and (min-width: 768px) {
+            margin: 0 auto 0 auto !important;
+            padding-top: 172px;
+            h1 {
+              font-size: 72px;
+              line-height: 125%;
+            }
+
+            p {  
+                padding-top: 24px;              
+                font-size: 24px;
+                font-weight: map-get($map: $font-weight, $key: regular);
+                line-height: 150%;
+            }
+        }
+        margin: 80px auto 80px auto !important;
+    }
+
+    .btn-started {
+        @media only screen and (min-width: 768px) {
+            margin-top: 116px !important;
+        }
+        margin-top: 80px;
+        button {
+            font-size: 24px;
+            font-weight: map-get($map: $font-weight, $key: semi-bold);
+            color: $black;
+        }
+    }
+
+    .explain {
+        background-color: $light-grey;
+        h1 {            
+            font-weight: map-get($map: $font-weight, $key: bold);
+        }
+        @media only screen and (min-width: 768px) {
+            h1 {
+                font-size: 40 !important;
+            }
+        }
+
+        .card {
+            border-radius: 12px !important;
+            width: 364px !important;
+        }
+
+        .card-title {
+            font-weight: map-get($map: $font-weight, $key: bold);
+        }
+
+        .card-text {
+            font-weight: map-get($map: $font-weight, $key: regular);
+            font-size: 16px;
+            color: $grey;
+        }
+    }
+
+    .client {
+        h1 {            
+            font-weight: map-get($map: $font-weight, $key: bold);
+        }
+        @media only screen and (min-width: 768px) {
+            h1 {
+                font-size: 40 !important;
+            }
+        }
+
+        .merriweather {
+            font-family: Merriweather !important;
+            font-weight: map-get($map: $font-weight, $key: extra-bold);
+            font-size: 80px;
+            color: #8BADAD;
+            height: 60px;
+        }
+        
+        .review {
+            color: $pink;
+            line-height: 150%;
+            font-weight: map-get($map: $font-weight, $key: regular);
+            font-size: 20px;
+            font-family: 'Lato', sans-serif !important;
+        }
+
+        h5 {
+            font-weight: map-get($map: $font-weight, $key: extra-bold);
+            font-size: 32px;
+            color: $light-black;
+            font-family: 'Lato', sans-serif !important;
+        }
+
+        .company {
+            font-weight: map-get($map: $font-weight, $key: regular);
+            font-size: 16px;
+            color: $light-black;
+            font-family: 'Lato', sans-serif !important;
+        }
+    }
+
+    .mail {
+        background-color: white;
+        border-radius: 12px;
+        h1 {            
+            font-weight: map-get($map: $font-weight, $key: bold);
+            line-height: 135%;
+            color: $dark;
+        }
+        @media only screen and (min-width: 768px) {
+            h1 {
+                font-size: 72px !important;
+            }
+        }
+        p {            
+            font-weight: map-get($map: $font-weight, $key: regular);
+            line-height: 150%;
+            font-size: 16px;
+            color: $dark;
+        }
+
+        .btn-message {
+            background-color: $light;
+            color: $black;       
+            font-weight: map-get($map: $font-weight, $key: medium);
+            font-size: 24px;
         }
     }
 }
