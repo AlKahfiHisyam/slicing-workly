@@ -1,0 +1,40 @@
+
+
+body {
+    nav {
+        .navbar-brand {
+          h5 {
+            font-weight: map-get($map: $font-weight, $key: bold) !important;
+            size: 28px;
+            line-height: 150%;
+          }
+        }
+        
+        .navbar-nav {
+          .nav-link {
+            font-size: 16px;
+            font-weight: map-get($map: $font-weight, $key: semi-bold);
+            color: $light-blue!important;
+            margin: 0 30px;
+          }
+    
+          .active {
+            color: $black !important;
+            width: 100%;
+            display: flex !important;
+            justify-content: center;
+            a {
+              width: 12px;
+            }
+          }
+    
+          .border-bottom{
+            border-bottom: 2px solid $blue !important;
+          }
+    
+          @media screen and (min-width: 993px) {
+              margin-left: 500px;
+          }
+        }
+    }
+}
