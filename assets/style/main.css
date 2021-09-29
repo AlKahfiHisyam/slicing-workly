@@ -219,4 +219,9 @@ body footer a {
 body footer li {
   margin-bottom: 8px;
 }
+
+body footer .social-media a {
+  margin-right: 10px;
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */
