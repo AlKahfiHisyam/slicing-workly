@@ -6,6 +6,14 @@
   font-family: 'Inter', sans-serif !important;
 }
 
+body .cl-light {
+  color: #EEEEEE;
+}
+
+body .cl-light-grey-2 {
+  color: #90BCB7;
+}
+
 body .font-lora {
   font-family: 'Lora', sans-serif !important;
 }
@@ -145,34 +153,44 @@ body .client .company {
   font-family: 'Lato', sans-serif !important;
 }
 
-body .mail {
+body .message {
+  background-color: #E6F5F0;
+}
+
+body .message .mail {
   background-color: white;
   border-radius: 12px;
 }
 
-body .mail h1 {
+body .message .mail h1 {
   font-weight: 700;
   line-height: 135%;
   color: #232323;
 }
 
 @media only screen and (min-width: 768px) {
-  body .mail h1 {
+  body .message .mail h1 {
     font-size: 72px !important;
   }
 }
 
-body .mail p {
+body .message .mail p {
   font-weight: 400;
   line-height: 150%;
   font-size: 16px;
   color: #232323;
 }
 
-body .mail .btn-message {
+body .message .mail .btn-message {
   background-color: #EEEEEE;
   color: #082D28;
   font-weight: 500;
   font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  body .message .mail .btn-message {
+    font-size: 16px !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -19,12 +19,21 @@ $dark: #232323;
 $black: #082D28;
 $light-black: #064242;
 $light-grey: #E6F5F0;
+$light-grey-2: #90BCB7;
 $grey: #868686;
 $pink: #627A7A;
 $light: #EEEEEE;
 
 
 body {
+    .cl-light {
+        color: $light;
+    }
+
+    .cl-light-grey-2 {
+        color: $light-grey-2;
+    }
+
     .font-lora {
         font-family: 'Lora', sans-serif !important;
     }
@@ -159,31 +168,38 @@ body {
         }
     }
 
-    .mail {
-        background-color: white;
-        border-radius: 12px;
-        h1 {            
-            font-weight: map-get($map: $font-weight, $key: bold);
-            line-height: 135%;
-            color: $dark;
-        }
-        @media only screen and (min-width: 768px) {
-            h1 {
-                font-size: 72px !important;
+    .message {
+        background-color: $light-grey;
+        .mail {
+            background-color: white;
+            border-radius: 12px;
+            h1 {            
+                font-weight: map-get($map: $font-weight, $key: bold);
+                line-height: 135%;
+                color: $dark;
+            }
+            @media only screen and (min-width: 768px) {
+                h1 {
+                    font-size: 72px !important;
+                }
+            }
+            p {            
+                font-weight: map-get($map: $font-weight, $key: regular);
+                line-height: 150%;
+                font-size: 16px;
+                color: $dark;
+            }
+    
+            .btn-message {
+                background-color: $light;
+                color: $black;       
+                font-weight: map-get($map: $font-weight, $key: medium);
+                font-size: 24px;
+                
+                @media only screen and (max-width: 768px) {
+                    font-size: 16px !important;
+                }
             }
         }
-        p {            
-            font-weight: map-get($map: $font-weight, $key: regular);
-            line-height: 150%;
-            font-size: 16px;
-            color: $dark;
-        }
-
-        .btn-message {
-            background-color: $light;
-            color: $black;       
-            font-weight: map-get($map: $font-weight, $key: medium);
-            font-size: 24px;
-        }
-    }
+    }    
 }
