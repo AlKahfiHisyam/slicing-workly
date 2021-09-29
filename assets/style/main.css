@@ -193,4 +193,30 @@ body .message .mail .btn-message {
     font-size: 16px !important;
   }
 }
+
+body footer {
+  background: radial-gradient(163.37% 1411.2% at 163.37% -487.87%, #114E4E 0%, #052D2D 34.18%, #041111 61.14%, #000909 91.58%, #000909 100%);
+  color: #EEEEEE;
+}
+
+body footer h5 {
+  font-weight: 700 !important;
+  size: 24px !important;
+  line-height: 150%;
+}
+
+body footer p {
+  font-weight: 400 !important;
+  size: 16px !important;
+  line-height: 150%;
+  color: #90BCB7;
+}
+
+body footer a {
+  color: #EEEEEE;
+}
+
+body footer li {
+  margin-bottom: 8px;
+}
 /*# sourceMappingURL=main.css.map */

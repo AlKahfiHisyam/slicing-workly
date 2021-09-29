@@ -195,11 +195,33 @@ body {
                 color: $black;       
                 font-weight: map-get($map: $font-weight, $key: medium);
                 font-size: 24px;
-                
+
                 @media only screen and (max-width: 768px) {
                     font-size: 16px !important;
                 }
             }
         }
-    }    
+    } 
+    
+    footer {
+        background: radial-gradient(163.37% 1411.2% at 163.37% -487.87%, #114E4E 0%, #052D2D 34.18%, #041111 61.14%, #000909 91.58%, #000909 100%);
+        color: $light;
+        h5 {
+            font-weight: map-get($map: $font-weight, $key: bold) !important;
+            size: 24px !important;
+            line-height: 150%;
+        }
+        p {
+            font-weight: map-get($map: $font-weight, $key: regular) !important;
+            size: 16px !important;
+            line-height: 150%;
+            color: $light-grey-2;
+        }
+        a {
+            color: $light;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    }
 }
